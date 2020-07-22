@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:onClick="start"
+        android:textSize="60sp"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+
+        android:padding="40dp"/>
+    <TextView
+        android:id="@+id/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30s"
+        android:textSize="40sp"
+        android:layout_marginLeft="10dp"
+        android:background=""/>
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/0"
+        android:textSize="40sp"
+        android:layout_toRightOf="@+id/seconds"
+        android:layout_marginLeft="270dp"/>
+    <TextView
+        android:id="@+id/qstn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="31+7"
+        android:textSize="30sp"
+        android:padding="15dp"/>
+<GridLayout
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/qstn"
+    android:padding="10dp">
+    <Button
+        android:id="@+id/Button0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="14"
+        android:textSize="80sp"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill"
+        android:tag="0"
+
+
+        />
+
+<Button
+    android:id="@+id/Button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="14"
+    android:textSize="80sp"
+    android:layout_column="1"
+    android:layout_row="0"
+    android:layout_columnWeight="1"
+    android:layout_rowWeight="1"
+    android:layout_gravity="fill"
+    android:tag="1"
+
+
+    />
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14"
+        android:textSize="80sp"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill"
+        android:tag="2"
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14"
+        android:textSize="80sp"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill"
+        android:tag="3"
+
+
+        />
+</GridLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="correct!!"
+        android:textSize="40sp"
+        android:layout_below="@+id/goButton"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
